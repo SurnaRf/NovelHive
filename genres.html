@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Genres</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <button class="arrow-btn" id="arrowBtn">&gt;</button>
+    
+    <nav class="vertical-nav" id="verticalNav">
+        <a href="index.html">Home</a>
+        <a href="genres.html">Genres</a>
+        <a href="authors.html">Authors</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="about.html">About</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">NovelHive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="genres.html">Genres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="authors.html">Authors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quotes.html">Quotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="text-center mb-5">Choose a genre</h1>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/fantasy2.jpg" class="card-img-top" alt="Fantasy">
+                    <div class="card-body">
+                        <h5 class="card-title">Fantasy</h5>
+                        <p class="card-text">Dive into magical worlds and epic adventures.</p>
+                        <a href="#fantasy-books" class="btn btn-primary">View books</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/mystery2.jpg" class="card-img-top" alt="Mystery">
+                    <div class="card-body">
+                        <h5 class="card-title">Mystery</h5>
+                        <p class="card-text">Uncover the truth and solve thrilling mysteries.</p>
+                        <a href="#mystery-books" class="btn btn-primary">View books</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/romance2.jpg" class="card-img-top" alt="Romance">
+                    <div class="card-body">
+                        <h5 class="card-title">Romance</h5>
+                        <p class="card-text">Feel the warmth of love and heartfelt connections.</p>
+                        <a href="#romance-books" class="btn btn-primary">View books</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="fantasy-books" class="py-5">
+            <h2 class="text-center mb-4">Fantasy books</h2>
+    
+            <div id="fantasy-books-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/hobbit.jpg" class="card-img-top" alt="The Hobbit">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Hobbit</h5>
+                                        <p class="card-text">A classic tale of adventure by J.R.R. Tolkien.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/hp.jpg" class="card-img-top" alt="Harry Potter">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Harry Potter</h5>
+                                        <p class="card-text">Join Harry on his magical journey at Hogwarts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/got.jpg" class="card-img-top" alt="A Game of Thrones">
+                                    <div class="card-body">
+                                        <h5 class="card-title">A Game of Thrones</h5>
+                                        <p class="card-text">In this epic fantasy novel, noble families vie for control of the
+                                            Iron Throne in the violent world of Westeros.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/narnia.jpg" class="card-img-top" alt="The Chronicles of Narnia">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Chronicles of Narnia</h5>
+                                        <p class="card-text">Explore the magical world of Narnia through the adventures of four
+                                            siblings who discover a hidden land beyond a wardrobe.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/fotr.jpg" class="card-img-top" alt="The Fellowship of the Ring">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Fellowship of the Ring</h5>
+                                        <p class="card-text">The first book in *The Lord of the Rings* series, where Frodo
+                                            Baggins sets out on a dangerous journey to destroy the One Ring.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/mistborn.jpg" class="card-img-top" alt="Mistborn">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mistborn</h5>
+                                        <p class="card-text">A unique magic system based on metals, a rebellious group, and an
+                                            oppressive dark lord combine in this epic fantasy adventure.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/wind.jpg" class="card-img-top" alt="The Name of the Wind">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Name of the Wind</h5>
+                                        <p class="card-text">Follow Kvothe as he recounts his extraordinary life, from his
+                                            childhood in a traveling troupe to his journey to master magic.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/wayofkings.jpg" class="card-img-top" alt="The Way of Kings">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Way of Kings</h5>
+                                        <p class="card-text">The first book in *The Stormlight Archive*, a series set in a world
+                                            plagued by fierce storms and great battles.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/elric.jpg" class="card-img-top" alt="Elric of Melnibone">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Elric of Melnibone</h5>
+                                        <p class="card-text">A dark fantasy tale about Elric, the last Emperor of Melnibone, and
+                                            his powerful yet cursed sword Stormbringer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#fantasy-books-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#fantasy-books-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="mystery-books" class="py-5">
+            <h2 class="text-center mb-4">Mystery books</h2>
+        
+            <div id="mystery-books-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/sherlock.jpg" class="card-img-top" alt="Sherlock Holmes">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sherlock Holmes</h5>
+                                        <p class="card-text">The famous detective Sherlock Holmes solves mysterious cases with
+                                            his
+                                            brilliant deduction skills.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/gonegirl.jpg" class="card-img-top" alt="Gone Girl">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Gone Girl</h5>
+                                        <p class="card-text">A thrilling mystery about a wife's disappearance and the secrets
+                                            that unravel.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/da-vinci-code.jpg" class="card-img-top" alt="The Da Vinci Code">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Da Vinci Code</h5>
+                                        <p class="card-text">A suspenseful mystery that intertwines historical secrets and
+                                            modern-day conspiracies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/murder-orient.jpg" class="card-img-top" alt="Murder on the Orient Express">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Murder on the Orient Express</h5>
+                                        <p class="card-text">Hercule Poirot investigates a murder aboard the luxurious Orient
+                                            Express.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/dragon-tattoo.jpg" class="card-img-top"
+                                        alt="The Girl with the Dragon Tattoo">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Girl with the Dragon Tattoo</h5>
+                                        <p class="card-text">A gripping mystery of corruption and family secrets set in Sweden.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/in-the-woods.jpg" class="card-img-top" alt="In the Woods">
+                                    <div class="card-body">
+                                        <h5 class="card-title">In the Woods</h5>
+                                        <p class="card-text">A chilling crime novel about a detective's haunted past and a
+                                            present-day murder case.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-4 d-flex align-items-stretch">
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/big-sleep.jpg" class="card-img-top" alt="The Big Sleep">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Big Sleep</h5>
+                                        <p class="card-text">A noir classic featuring private detective Philip Marlowe
+                                            unraveling a complex web of lies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/the-silent-patient.jpg" class="card-img-top" alt="The Silent Patient">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Silent Patient</h5>
+                                        <p class="card-text">A psychological thriller about a woman's silence after a shocking
+                                            crime.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/and-then-there-were-none.jpg" class="card-img-top"
+                                        alt="And Then There Were None">
+                                    <div class="card-body">
+                                        <h5 class="card-title">And Then There Were None</h5>
+                                        <p class="card-text">Agatha Christie's masterpiece of suspense, where strangers are
+                                            invited to an island and meet mysterious ends.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#mystery-books-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mystery-books-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="romance-books" class="py-5">
+            <h2 class="text-center mb-4">Romance books</h2>        
+            <div id="romance-books-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/pride-and-prejudice.jpg" class="card-img-top" alt="Pride and Prejudice">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pride and Prejudice</h5>
+                                        <p class="card-text">Jane Austen's iconic story of Elizabeth Bennet and Mr. Darcy,
+                                            exploring love, class, and misunderstandings.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/jane-eyre.jpg" class="card-img-top" alt="Jane Eyre">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jane Eyre</h5>
+                                        <p class="card-text">Charlotte Brontë's tale of resilience, independence, and a
+                                            passionate romance with Mr. Rochester.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/wuthering-heights.jpg" class="card-img-top" alt="Wuthering Heights">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Wuthering Heights</h5>
+                                        <p class="card-text">Emily Brontë's dark, intense story of love, revenge, and obsession
+                                            set on the moors.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/anna-karenina.jpg" class="card-img-top" alt="Anna Karenina">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Anna Karenina</h5>
+                                        <p class="card-text">Leo Tolstoy's sweeping tale of love, betrayal, and societal norms
+                                            in 19th-century Russia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/sense-and-sensibility.jpg" class="card-img-top"
+                                        alt="Sense and Sensibility">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sense and Sensibility</h5>
+                                        <p class="card-text">Jane Austen's elegant exploration of love, heartbreak, and
+                                            contrasting personalities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/madding-crowd.jpg" class="card-img-top"
+                                        alt="Far from the Madding Crowd">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Far from the Madding Crowd</h5>
+                                        <p class="card-text">Thomas Hardy's story of Bathsheba Everdene and her tumultuous
+                                            romantic entanglements.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <div class="row g-4 d-flex align-items-stretch">
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/romeo-and-juliet.jpg" class="card-img-top" alt="Romeo and Juliet">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Romeo and Juliet</h5>
+                                        <p class="card-text">William Shakespeare's tragic tale of star-crossed lovers from
+                                            feuding families.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/the-age.jpg" class="card-img-top" alt="The Age of Innocence">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Age of Innocence</h5>
+                                        <p class="card-text">Edith Wharton's elegant portrayal of love, duty, and societal
+                                            constraints in New York's Gilded Age.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card genre-card">
+                                    <img src="images/rebecca.jpg" class="card-img-top" alt="Rebecca">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rebecca</h5>
+                                        <p class="card-text">Daphne du Maurier's haunting love story shrouded in mystery and
+                                            intrigue.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#romance-books-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#romance-books-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>  
+        
+        <section id="top-books" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Top 10 books</h2>
+                <p class="text-center">Explore the most loved books of this month, ranked by popularity.</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>1. To Kill a Mockingbird</strong>
+                                    <p class="mb-0 text-muted">By Harper Lee</p>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">★★★★★</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>2. 1984</strong>
+                                    <p class="mb-0 text-muted">By George Orwell</p>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">★★★★★</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>3. The Great Gatsby</strong>
+                                    <p class="mb-0 text-muted">By F. Scott Fitzgerald</p>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">★★★★☆</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>4. Pride and Prejudice</strong>
+                                    <p class="mb-0 text-muted">By Jane Austen</p>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">★★★★☆</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>5. The Hobbit</strong>
+                                    <p class="mb-0 text-muted">By J.R.R. Tolkien</p>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">★★★★☆</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>6. Moby-Dick</strong>
+                                    <p class="mb-0 text-muted">By Herman Melville</p>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">★★★★☆</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>7. War and Peace</strong>
+                                    <p class="mb-0 text-muted">By Leo Tolstoy</p>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">★★★★☆</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>8. Crime and Punishment</strong>
+                                    <p class="mb-0 text-muted">By Fyodor Dostoevsky</p>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">★★★★☆</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>9. Wuthering Heights</strong>
+                                    <p class="mb-0 text-muted">By Emily Brontë</p>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">★★★★☆</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>10. The Catcher in the Rye</strong>
+                                    <p class="mb-0 text-muted">By J.D. Salinger</p>
+                                </div>
+                                <span class="badge bg-primary rounded-pill">★★★☆☆</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+        <button id="back-to-top">
+            ↑
+        </button>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 NovelHive. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

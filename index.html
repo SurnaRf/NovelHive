@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelHive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+
+    <button class="arrow-btn" id="arrowBtn">&gt;</button>
+    
+    <nav class="vertical-nav" id="verticalNav">
+        <a href="index.html">Home</a>
+        <a href="genres.html">Genres</a>
+        <a href="authors.html">Authors</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="about.html">About</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">NovelHive</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="genres.html">Genres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="authors.html">Authors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quotes.html">Quotes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quiz.html">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <div class="hero-section">
+        <div>
+            <h1>Welcome to NovelHive</h1>
+            <p>Discover your next great read and explore endless possibilities.</p>
+            <a href="#genres" class="btn btn-primary btn-lg mt-4">Explore Genres</a>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <section id="genres" class="py-5">
+            <h2 class="text-center mb-4">Explore Genres</h2>
+            <p class="text-center">Browse through a variety of genres to find your next favorite book.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/fantasy.jpeg" class="card-img-top" alt="Genre 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Fantasy</h5>
+                            <p class="card-text">Dive into magical worlds and epic adventures.</p>
+                            <a href="genres.html" class="btn btn-primary">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/mystery.jpg" class="card-img-top" alt="Genre 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Mystery</h5>
+                            <p class="card-text">Uncover the truth and solve thrilling mysteries.</p>
+                            <a href="genres.html" class="btn btn-primary">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/romance.jpg" class="card-img-top" alt="Genre 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Romance</h5>
+                            <p class="card-text">Feel the warmth of love and heartfelt connections.</p>
+                            <a href="genres.html" class="btn btn-primary">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-5 bg-light">
+            <h2 class="text-center mb-4">About us</h2>
+            <p class="text-center">NovelHive is your gateway to the world of books, where every page is an adventure.                
+            </p>
+            <div class="text-center">
+                <a href="about.html" class="btn btn-primary">Learn more</a>
+            </div>            
+        </section>
+
+        <section id="contact" class="py-5">
+            <h2 class="text-center mb-4">Contact us</h2>
+            <p class="text-center">Have questions? Get in touch with us!</p>
+        </section>
+    </div>
+    <button id="back-to-top">
+        ↑
+    </button>
+
+    <footer class="bg-dark text-center text-white py-3">
+        <p>&copy; 2025 NovelHive. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

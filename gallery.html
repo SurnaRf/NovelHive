@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelHive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <button class="arrow-btn" id="arrowBtn">&gt;</button>
+    
+    <nav class="vertical-nav" id="verticalNav">
+        <a href="index.html">Home</a>
+        <a href="genres.html">Genres</a>
+        <a href="authors.html">Authors</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="about.html">About</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">NovelHive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="genres.html">Genres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="authors.html">Authors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quotes.html">Quotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="gallery-section">
+        <div class="container">
+            <h2 class="gallery-title">Book gallery</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card genre-card">
+                        <img src="images/pride-and-prejudice.jpg" class="gallery-img" alt="Pride and Prejudice"
+                            data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="0">
+                        <div class="card-body">
+                            <h5 class="card-title">Pride and Prejudice</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card genre-card">
+                        <img src="images/sense-and-sensibility.jpg" class="gallery-img" alt="Sense and Sensibility"
+                            data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="1">
+                        <div class="card-body">
+                            <h5 class="card-title">Sense and Sensibility</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card genre-card">
+                        <img src="images/wuthering-heights.jpg" class="gallery-img" alt="Wuthering Heights"
+                            data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="2">
+                        <div class="card-body">
+                            <h5 class="card-title">Wuthering Heights</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card genre-card">
+                        <img src="images/hobbit.jpg" class="gallery-img" alt="The Hobbit" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" data-bs-slide-to="3">
+                        <div class="card-body">
+                            <h5 class="card-title">The Hobbit</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card genre-card">
+                        <img src="images/fotr.jpg" class="gallery-img" alt="The Fellowship of the Ring"
+                            data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="4">
+                        <div class="card-body">
+                            <h5 class="card-title">The Fellowship of the Ring</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card genre-card">
+                        <img src="images/da-vinci-code.jpg" class="gallery-img" alt="The Da Vinci Code"
+                            data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="5">
+                        <div class="card-body">
+                            <h5 class="card-title">The Da Vinci Code</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <video width="100%" height="auto" controls>
+                            <source src="images/Exploring Love and Class in Austen-VEED.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <video width="100%" height="auto" controls>
+                            <source src="images/Discover the Dark Allure of Wuthering Heights!-VEED.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <video width="100%" height="auto" controls>
+                            <source src="images/Discover Bilbo's Epic Journey in The Hobbit-VEED.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/pride-and-prejudice.jpg" class="d-block w-100"
+                                    alt="Pride and Prejudice">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/sense-and-sensibility.jpg" class="d-block w-100"
+                                    alt="Sense and Sensibility">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/wuthering-heights.jpg" class="d-block w-100" alt="Wuthering Heights">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/hobbit.jpg" class="d-block w-100" alt="The Hobbit">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/fotr.jpg" class="d-block w-100" alt="The Fellowship of the Ring">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/da-vinci-code.jpg" class="d-block w-100" alt="The Da Vinci Code">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="back-to-top">
+        ↑
+    </button>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 NovelHive. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>

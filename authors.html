@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Spotlight - NovelHive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <button class="arrow-btn" id="arrowBtn">&gt;</button>
+    
+    <nav class="vertical-nav" id="verticalNav">
+        <a href="index.html">Home</a>
+        <a href="genres.html">Genres</a>
+        <a href="authors.html">Authors</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="about.html">About</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">NovelHive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="genres.html">Genres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="authors.html">Authors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quotes.html">Quotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section-authors hero-section bg-light py-5 text-center">
+        <h1 class="display-4">Author Spotlight</h1>
+        <p class="lead">Learn about the incredible authors behind your favorite books.</p>
+    </div>
+
+<div class="container my-5">
+    <section id="authors" class="py-5">
+        <h2 class="text-center mb-4">Featured Authors</h2>
+        <p class="text-center">Discover the lives and works of some of the greatest authors in history.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-sm genre-card">
+                    <img src="images/jane-austen.jpg" class="card-img-top" alt="Jane Austen">
+                    <div class="card-body">
+                        <h5 class="card-title">Jane Austen</h5>
+                        <p class="card-text">Known for timeless novels like <em>Pride and Prejudice</em>.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janeAustenModal">Learn
+                            More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm genre-card">
+                    <img src="images/tolkien.jpg" class="card-img-top" alt="J.R.R. Tolkien">
+                    <div class="card-body">
+                        <h5 class="card-title">J.R.R. Tolkien</h5>
+                        <p class="card-text">Author of <em>The Lord of the Rings</em> and <em>The Hobbit</em>.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tolkienModal">Learn
+                            More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm genre-card">
+                    <img src="images/dumas.jpg" class="card-img-top" alt="Alexandre Dumas">
+                    <div class="card-body">
+                        <h5 class="card-title">Alexandre Dumas</h5>
+                        <p class="card-text">Author of <em>The Three Musketeers</em> and <em>The Count of Monte Cristo</em>.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dumasModal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<button id="back-to-top">
+    ↑
+</button>
+<div class="modal fade" id="janeAustenModal" tabindex="-1" aria-labelledby="janeAustenLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="janeAustenLabel">Jane Austen</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Jane Austen (1775–1817) was an English novelist known for her insightful commentary on love, society,
+                and class. Her famous works include <em>Pride and Prejudice</em>, <em>Sense and Sensibility</em>, and
+                <em>Emma</em>. Austen's sharp wit and deep understanding of human relationships make her books
+                timeless classics.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="tolkienModal" tabindex="-1" aria-labelledby="tolkienLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tolkienLabel">J.R.R. Tolkien</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                J.R.R. Tolkien (1892–1973) was an English writer, poet, and philologist, best known for creating the
+                epic world of Middle-earth. His works, including <em>The Hobbit</em> and <em>The Lord of the Rings</em>,
+                have inspired generations and established modern fantasy as a literary genre.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="dumasModal" tabindex="-1" aria-labelledby="dumasLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="dumasLabel">Alexandre Dumas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Alexandre Dumas (1802–1870) was a French writer whose adventurous novels captivated readers
+                worldwide. His notable works, including <em>The Three Musketeers</em> and <em>The Count of Monte
+                Cristo</em>, are celebrated for their vivid storytelling and memorable characters.
+            </div>
+        </div>
+    </div>
+</div>
+   
+    <footer class="bg-dark text-center text-white py-3">
+        <p>&copy; 2025 NovelHive. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
